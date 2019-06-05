@@ -1,7 +1,7 @@
 # Avenues-Hangprinter-V3-Documentation
 
 ## **1. Calibration**
-words here
+<p words here
 
 
 
@@ -14,7 +14,11 @@ words here
 
 
 
+<script>
+  let  x = document.getElementById('p');
+  x.innerHtml = "FUCK THIS SHIT";
 
+</script>
 
 
 
@@ -32,7 +36,7 @@ Torbjørn's Smart Stepper software had a bug while booting. We were bombarded wi
 To solve it, we flashed NZS original software, ran the `calibration` and copied the calibration numbers that were shown in the serial motor.
 
 
-Then we came back to Torbjørn's version, in the file `nonvolatile.cpp`. We pasted the numbers in line 29, and added a comma after the last one.
+Then we came back to Torbjørn's version, in the file `nonvolatile.cpp` We pasted the numbers in line 29, and added a comma after CAccAthe last one.
   
   ![Numbers](/CalNumbers.png)
 
