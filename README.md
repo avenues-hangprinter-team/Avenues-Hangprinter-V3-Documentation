@@ -9,7 +9,7 @@ The first task to build the printer is to gather all of the needed materials and
 - BOM
   - _This bill of materials lists all of the necessary materials needed outside of 3D printed parts. Adjust the lengths of cables, wires and anchors for your scale._
 - 3D printed parts
-  - You can find the STL files for the 3D printed parts in this link. It is recommended that these parts be sent out for professional 3D printers, since precision is of utmost importance.
+  - You can find the STL files for the 3D printed parts in this link. It is recommended that these parts be sent out for professional 3D printers, since precision is of utmost importance. We ran into some print-quality issues specially in the gear parts.
 
 #### Mover Assembly
 
@@ -32,8 +32,7 @@ The first task to build the printer is to gather all of the needed materials and
   - Use the template to ensure that the motor mounts are in the correct place. You can see how to attach the motors to the motor mounts in the official assembly, that can be found in this link. You might need to add washers under the mounts in order to have the spools spinning smoothly. If you are doing a build without mechaduinos, then you can go ahead and mount the motors now. Otherwise, read the mechaduino section and mount the motors after the mechanduinos are attached.
 - Anchors
   - The anchor's job is to redirect the line coming from the ceiling mount. First of all, we should prepare two anchor line rollers which are 3D printed (It is the easiest method to get those pieces) Then, prepare a wood sheet which is in square shape. After that we attach a same-length-with-wood-sheet wood beam on a side of wood square sheet. Measure the length of side of the mover(triangle structure) and fixed the anchor line rollers on the wood beam. The length between two rollers should have the same length with the side of the mover.
-  
-  
+
 ## **2. Electronics**
 
 - The version of the Hangprinter we used included Smart Steppers/Mechaduinos for each stepper motor. They make the overall stability of the printer superior than before, preventing issues such as layer shifting. There also exists an experimental use of the Smart Stepper's torque mode to auto-calibrate the printer, saving huge amounts of time and effort.
@@ -43,6 +42,12 @@ The first task to build the printer is to gather all of the needed materials and
 ---
 
 ### **Relevent Links**
+
+Nano Stepper Zero (NSZ) or SmartStepper github link : [https://github.com/Misfittech/nano_stepper](https://github.com/Misfittech/nano_stepper)
+
+Torbjørn's Simulation Python Script : [https://gitlab.com/tobben/auto-calibration-simulation-for-hangprinter](https://gitlab.com/tobben/auto-calibration-simulation-for-hangprinter)
+
+Hangprinter Electronics Diagram : [https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg](https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg)
 
 ---
 
@@ -66,13 +71,14 @@ After booting up, we ran `testcal` and made sure that the max error was at least
 
 - While wiring the system, we faced some avoidable issues. The SDA and SCL lines were not perfectly crimped, which made the connection weak and unstable. If the I2C features don't seem to work at a first glance, make sure your wires are crimped well and are all the way on.
   >
-- Another issue we faced was while using the recommended 28 gauge ribbon cable to power the hot end and the extruder motor. It didn't provide enough current, which made the hot end temperature unstable and the motor vibrate in an unusual way. To solve the problem, we replaced the cable \_\_ gauge wire.
+- Another issue we faced was while using the recommended 28 gauge ribbon cable to power the hot end and the extruder motor. It didn't provide enough current, which made the hot end temperature unstable and the motor vibrate in an unusual way. To solve the problem, we replaced the cable gauge wire.
 
 ---
 
 **_Mechaduinos_**
 
 - If you plan on using Mechaduinos instead of Smart Steppers, we still recommend recommend Misfitech's Nano Zero Stepper (NZS) software. The Mechaduino software includes some floating point rounding errors that can ruin the quality of the prints.
+
   - _If you face issues while adapting their software to Mechaduinos, [this forum](https://groups.google.com/forum/#!topic/mechaduino/Fbc_Kod7Rqo) brought some great answers to our questions regarding this same issue._
     >
   - Before searching for answers, go to your `board.h` file and make sure that:
