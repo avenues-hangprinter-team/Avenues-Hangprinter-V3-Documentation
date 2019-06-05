@@ -32,23 +32,8 @@ The first task to build the printer is to gather all of the needed materials and
   - Use the template to ensure that the motor mounts are in the correct place. You can see how to attach the motors to the motor mounts in the official assembly, that can be found in this link. You might need to add washers under the mounts in order to have the spools spinning smoothly. If you are doing a build without mechaduinos, then you can go ahead and mount the motors now. Otherwise, read the mechaduino section and mount the motors after the mechanduinos are attached.
 - Anchors
   - The anchor's job is to redirect the line coming from the ceiling mount. First of all, we should prepare two anchor line rollers which are 3D printed (It is the easiest method to get those pieces) Then, prepare a wood sheet which is in square shape. After that we attach a same-length-with-wood-sheet wood beam on a side of wood square sheet. Measure the length of side of the mover(triangle structure) and fixed the anchor line rollers on the wood beam. The length between two rollers should have the same length with the side of the mover.
-
-Electronics
-Arduino
-Marlin (Cole + Noya)
-Raspberry Pi
-OctoPi (Marton)
-Smart Steppers/Mechaduino
-SmartStepper Sub tree (Cole)
-Wiring and Circuitry
-(NOYA)
-Calibration
-Instructions (Cole)
-Get points
-How to use
-.stl to print (octo-pi)
-Time estimations (g/s? mm/s?)
-
+  
+  
 ## **2. Electronics**
 
 - The version of the Hangprinter we used included Smart Steppers/Mechaduinos for each stepper motor. They make the overall stability of the printer superior than before, preventing issues such as layer shifting. There also exists an experimental use of the Smart Stepper's torque mode to auto-calibrate the printer, saving huge amounts of time and effort.
