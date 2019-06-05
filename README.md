@@ -7,14 +7,14 @@
 The first task to build the printer is to gather all of the needed materials and parts. Some of the parts have to be 3D printed while some have to be bought.
 
 - BOM
-  - _This bill of materials lists all of the necessary materials needed outside of 3D printed parts. Adjust the lengths of cables, wires and anchors for your scale._
+  - [This bill of materials](https://docs.google.com/spreadsheets/d/1lOPZoF1P2OSdJcijZRVrwAEVFh3LLAnf6-s6k-hlbZU/edit?usp=sharing) lists all of the necessary materials needed outside of 3D printed parts. Adjust the lengths of cables, wires and anchors for your scale._
 - 3D printed parts
-  - You can find the STL files for the 3D printed parts in this link. It is recommended that these parts be sent out for professional 3D printers, since precision is of utmost importance. We ran into some print-quality issues specially in the gear parts.
+  - You can find the STL files for the 3D printed parts in [this link](https://drive.google.com/drive/folders/1kiN-LbARLsxLX0qtUebhP6p249WNFrtA). It is recommended that these parts be sent out for professional 3D printers, since precision is of utmost importance.
 
 #### Mover Assembly
 
 - Structure
-  - The structure of the mover consists of four wood beams, 3D printed corner clamps and beam sliders, the extruder and a lot of zipties. The instructions for how to put everything together can be found in the assembly manual in the official Hangprinter website.
+  - The structure of the mover consists of four wood beams, 3D printed corner clamps and beam sliders, the extruder and a lot of zipties. The instructions for how to put everything together can be found in the assembly manual in the official [Hangprinter website](https://hangprinter.org/doc/v3/).
 - Attach lines
   - This part of the assembly process has proven to be very difficult if not done properly. While cutting the fishline, ensure that it does not get tangled in the process. To avoid that, wrap the line around something small and flat, like a piece of cardboard.
 - Extruder assembly
@@ -23,13 +23,13 @@ The first task to build the printer is to gather all of the needed materials and
 #### Ceiling Mount Assembly
 
 - 2D template
-  - This template helps to attach the right parts in the right places. Make sure to print it in 100% scale. The PDF can be found in this link. Once the template is printed, tape it together and use it to drill holes in your wooden plate.
+  - This template helps to attach the right parts in the right places. Make sure to print it in 100% scale. The PDF can be found in [this link](https://gitlab.com/tobben/hangprinter/blob/Openscad_version_3/layout_a4.pdf). Once the template is printed, tape it together and use it to drill holes in your wooden plate.
 - Linerollers
   - Before attaching the line rollers to the ceiling mount, you should insert PTFE tubing into the D-linerollers. After this is done, place the line rollers in their right place, with the help of the template, and screw them with self tapping wood screws.
 - Spools
-  - The spools, spool gears, spool cores, spacers and 608 bearings will need to be assembled before being mounted. There is a detailed explanation on how to do it in the official assembly manual, that can be found in this link. Make sure that the bearings fit in the spool cores, don't force those too much because they can get stuck.
+  - The spools, spool gears, spool cores, spacers and 608 bearings will need to be assembled before being mounted. There is a detailed explanation on how to do it in the official assembly manual, that can be found in [this link](https://hangprinter.org/doc/v3/). Make sure that the bearings fit in the spool cores, don't force those too much because they can get stuck.
 - Attach motors
-  - Use the template to ensure that the motor mounts are in the correct place. You can see how to attach the motors to the motor mounts in the official assembly, that can be found in this link. You might need to add washers under the mounts in order to have the spools spinning smoothly. If you are doing a build without mechaduinos, then you can go ahead and mount the motors now. Otherwise, read the mechaduino section and mount the motors after the mechanduinos are attached.
+  - Use the template to ensure that the motor mounts are in the correct place. You can see how to attach the motors to the motor mounts in the official assembly, that can be found in [this link](https://hangprinter.org/doc/v3/). You might need to add washers under the mounts in order to have the spools spinning smoothly. If you are doing a build without mechaduinos, then you can go ahead and mount the motors now. Otherwise, read the mechaduino section and mount the motors after the mechanduinos are attached.
 - Anchors
   - The anchor's job is to redirect the line coming from the ceiling mount. First of all, we should prepare two anchor line rollers which are 3D printed (It is the easiest method to get those pieces) Then, prepare a wood sheet which is in square shape. After that we attach a same-length-with-wood-sheet wood beam on a side of wood square sheet. Measure the length of side of the mover(triangle structure) and fixed the anchor line rollers on the wood beam. The length between two rollers should have the same length with the side of the mover.
 
