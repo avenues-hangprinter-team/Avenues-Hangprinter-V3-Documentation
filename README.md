@@ -39,7 +39,7 @@ The first task to build the printer is to gather all of the needed materials and
   >
 - The main board is an Arduino Mega 2560 powered by a Ramps 1.4 shield. For wireless connection with the board, we used a Raspberry Pi 3 B+ loaded with OctoPi.
 
-[Our Electronics Diagram](/Schematics.jpg)
+![Our Electronics Diagram](/Schematics.jpg)
 ---
 
 ### **Relevent Links**
