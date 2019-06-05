@@ -35,3 +35,6 @@ To solve it, we flashed NZS original software, ran the `calibration` and copied 
 Then we came back to Torbjørn's version, in the file `nonvolatile.cpp`. We pasted the numbers in line 29, and added a comma after the last one.
   
   ![Numbers](/CalNumbers.png)
+
+
+After booting up, we ran `testcal` and made sure that the max error was at least less than 0.1. If yours is bigger, run `calibrate` again and `testcal` after.
