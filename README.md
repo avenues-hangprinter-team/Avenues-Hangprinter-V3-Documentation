@@ -39,6 +39,7 @@ The first task to build the printer is to gather all of the needed materials and
   >
 - The main board is an Arduino Mega 2560 powered by a Ramps 1.4 shield. For wireless connection with the board, we used a Raspberry Pi 3 B+ loaded with OctoPi.
 
+[Our Electronics Diagram](/Schematics.jpg)
 ---
 
 ### **Relevent Links**
@@ -47,7 +48,7 @@ Nano Stepper Zero (NSZ) or SmartStepper github link : [https://github.com/Misfit
 
 Torbjørn's Simulation Python Script : [https://gitlab.com/tobben/auto-calibration-simulation-for-hangprinter](https://gitlab.com/tobben/auto-calibration-simulation-for-hangprinter)
 
-Hangprinter Electronics Diagram : [https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg](https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg)
+Official Electronics Diagram : [https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg](https://hangprinter.org/doc/v3/media/Hangprinter_electronics_diagram_Mechaduino_RAMPS1.4_V2.3.jpg)
 
 ---
 
