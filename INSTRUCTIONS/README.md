@@ -1,5 +1,8 @@
-# Avenues Hangprinter Usage Manual
+#Avenues Hangprinter Usage Manual
 
+[test](#Printing)
+
+<a name="Power"></a>
 ## Power
 
 Before using the printer, make sure it is connected to power and that the voltage regulator is outputting 5V. That is the correct amount of voltage used to power the Raspberry Pi and the Smart Steppers. If the value shown is bigger, immediately shut down the system.
@@ -62,7 +65,7 @@ To assist you in your first "conversations" with the Hangprinter, here are some 
 - `G92` - _Sets an origin position to the printer_
 - `M114` - _Receive the current position of the gantry. This is useful during the calibration process._
 
-## What to print?
+##What to print?
 With any 3D printer, the first step to printing is either designing or downloading a 3D object that you would like to see in the real world.
 
 If you don't really want to design your own prints, [Thingiverse](https://www.thingiverse.com/) is an excellent place to find the awesome things made by the 3D printing community.
@@ -80,6 +83,7 @@ In the slicer settings, you should set a profile for the Hangprinter. The settin
 - Temperature:
 - Speed:
 
+<a name="Printing"></a>
 ## Printing
 
 It is finally time to print. After having a G-code file correctly sliced for the printer, upload it to Octopi in the `Load File` tab.
