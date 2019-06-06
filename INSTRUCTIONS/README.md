@@ -1,12 +1,21 @@
 #Avenues Hangprinter Usage Manual
 
-[test](#Printing)
+### Topics:
+- [Power](#Power)
+- [Octopi](#Octopi)
+- [G-code](#G-code)
+- [What to Print?](#Wtprint)
+- [Printing](#Printing)
+
+
+
 
 <a name="Power"></a>
 ## Power
 
 Before using the printer, make sure it is connected to power and that the voltage regulator is outputting 5V. That is the correct amount of voltage used to power the Raspberry Pi and the Smart Steppers. If the value shown is bigger, immediately shut down the system.
 
+<a name="Octopi"></a>
 ## Octopi
 
 To send and receive commands from the printer, we are using a Raspberry Pi 3 B+ connected to the Arduino, and a wireless platform called Octopi. To login, access [octopi-2.local](http://octopi-2.local) and use the following keys:
@@ -23,6 +32,7 @@ _\*only when making configuration changes_
 
 - _If the website is not loading, first make sure you are connected to the network `AVEWIFI_-1`. If it still refuses to load, try going to [octopi.local](octopi.local) or [octopi-3.local](octopi-3.local).\_
 
+<a name="G-code"></a>
 ## G-code
 
 3D printers use a specific set of commands to print and communicate, they are called G-code. After having an estabilished connection with Octopi, you will be able to look at the overall status of the Hangprinter, which includes things such as hotend temperature, fan speed etc.
@@ -65,6 +75,7 @@ To assist you in your first "conversations" with the Hangprinter, here are some 
 - `G92` - _Sets an origin position to the printer_
 - `M114` - _Receive the current position of the gantry. This is useful during the calibration process._
 
+<a name="Wtprint"></a>
 ##What to print?
 With any 3D printer, the first step to printing is either designing or downloading a 3D object that you would like to see in the real world.
 
