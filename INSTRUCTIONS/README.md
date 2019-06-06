@@ -96,24 +96,21 @@ In the slicer settings, you should set a profile for the Hangprinter. The settin
 
 Start G-Code:
 
-`G1 X0 Y0 Z0 F3000
-G1 Z15.0 F3000 ;Move the platform down 15mm
-;Prime the extruder
+>G1 X0 Y0 Z0 F3000
+G1 Z15.0 F3000 ; Move the platform down 15mm
+>G92 E0
+>G1 F200 E3
 G92 E0
-G1 F200 E3
 G92 E0
-G92 E0
-G1 F1500 E-6.5
+G1 F1500 E-6.5 ; Prime the extruder
 G1 X0.1 Y20 Z0.3 F5000.0 ; Move to start position
 G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line
 G1 X0.4 Y200.0 Z0.3 F5000.0 ; Move to side a little
 G1 X0.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line
 G92 E0 ; Reset Extruder
-G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
-;LAYER_COUNT:100
-;LAYER:0
+G1 Z2.0 F3000 ; Move Z Axis up to prevent scratching of Heat Bed
 M107
-G0 F3600 X17.75 Y-10 Z0.3`
+G0 F3600 X17.75 Y-10 Z0.3
 
 <a name="Printing"></a>
 ## Printing
@@ -129,13 +126,15 @@ Before starting your print, there are some necessary "pre-flight" checks:
   >
 - _Levelling_:
   If the print surface is not correctly levelled, the chances of a bad print are certain. Always make sure everything is calibrated and aligned properly.
+  >
 - _Wire Tightness_: 
   Ensure that all of the wires are properly taut. If any lines are not taut follow the following steps:
-  1. Are both lines loose?
-    - Yes
-     1. Check the power of the system and see if the stepper motors are on.
-     1. Try setting the Smart Steppers into torque mode using `G95 A35 B35 C35 D35`(Hold mover while doing this and reset to lock mode after using `G95 A0 B0 C0 D0`.
-   - No
+  - *Are both lines loose?*
+    - **Yes**
+    1. Check the power of the system and see if the stepper motors are on.
+    1. Try setting the Smart Steppers into torque mode using `G95 A35 B35 C35 D35`(Hold mover while doing this and reset to lock mode after, using `G95 A0 B0 C0 D0`).
+    >
+    - **No**
     1. Make sure that the anchors are parallel to the corresponding beam on the mover. Re-callibrate as needed.
     
   
