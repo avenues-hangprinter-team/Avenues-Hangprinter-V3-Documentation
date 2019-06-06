@@ -1,4 +1,4 @@
-#Avenues Hangprinter Usage Manual
+# Avenues Hangprinter Usage Manual
 
 ## Power
 
@@ -62,7 +62,7 @@ To assist you in your first "conversations" with the Hangprinter, here are some 
 - `G92` - _Sets an origin position to the printer_
 - `M114` - _Receive the current position of the gantry. This is useful during the calibration process._
 
-##What to print?
+## What to print?
 With any 3D printer, the first step to printing is either designing or downloading a 3D object that you would like to see in the real world.
 
 If you don't really want to design your own prints, [Thingiverse](https://www.thingiverse.com/) is an excellent place to find the awesome things made by the 3D printing community.
