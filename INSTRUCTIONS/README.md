@@ -30,7 +30,7 @@ _\*only when making configuration changes_
 
 >
 
-- _If the website is not loading, first make sure you are connected to the network `AVEWIFI_-1`. If it still refuses to load, try going to [octopi.local](octopi.local) or [octopi-3.local](octopi-3.local)._
+- _If the website is not loading, first make sure you are connected to the network `AVEWIFI_-1`. If it still refuses to load, try going to [octopi.local](octopi.local) or [octopi-3.local](octopi-3.local).\_
 
 <a name="G-code"></a>
 ## G-code
