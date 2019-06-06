@@ -1,4 +1,4 @@
-#Avenues Hangprinter Usage Manual
+# Avenues Hangprinter Usage Manual
 
 ### Topics:
 - [Power](#Power)
