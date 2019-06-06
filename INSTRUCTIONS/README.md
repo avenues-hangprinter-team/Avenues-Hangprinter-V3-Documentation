@@ -1,11 +1,13 @@
 # Avenues Hangprinter Usage Manual
 
 ### Topics:
-- [Power](#Power)
-- [Octopi](#Octopi)
-- [G-code](#G-code)
-- [What to Print?](#Wtprint)
-- [Printing](#Printing)
+- [Avenues Hangprinter Usage Manual](#avenues-hangprinter-usage-manual)
+    - [Topics:](#topics)
+  - [Power](#power)
+  - [Octopi](#octopi)
+  - [G-code](#g-code)
+  - [What to print?](#what-to-print)
+  - [Printing](#printing)
 
 
 
@@ -18,7 +20,7 @@ Before using the printer, make sure it is connected to power and that the voltag
 <a name="Octopi"></a>
 ## Octopi
 
-To send and receive commands from the printer, we are using a Raspberry Pi 3 B+ connected to the Arduino, and a wireless platform called Octopi. To login, access [octopi-2.local](http://octopi-2.local) and use the following keys:
+To send and receive commands from the printer, we are using a Raspberry Pi 3 B+ connected to the Arduino, and a wireless platform called Octopi. To login, access [octopi-2.local](http://octopi-2.local) and use the following logins:
 
 Username: `user`  
 Password: `Avenues1`
@@ -30,14 +32,14 @@ _\*only when making configuration changes_
 
 >
 
-- _If the website is not loading, first make sure you are connected to the network `AVEWIFI_-1`. If it still refuses to load, try going to [octopi.local](octopi.local) or [octopi-3.local](octopi-3.local).\_
+  - If the website is not loading, first make sure you are connected to the network `AVEWIFI_-1`. If it still refuses to load, try going to [octopi.local](octopi.local) or [octopi-3.local](octopi-3.local).
 
 <a name="G-code"></a>
 ## G-code
 
-3D printers use a specific set of commands to print and communicate, they are called G-code. After having an estabilished connection with Octopi, you will be able to look at the overall status of the Hangprinter, which includes things such as hotend temperature, fan speed etc.
+3D printers use a specific set of commands to print and communicate, they are called G-code. After having an established connection with Octopi, you will be able to look at the overall status of the Hangprinter, which includes things such as hotend temperature, fan speed etc.
 
-If needed to calibrate or test any sort of movement, some G-code commands are essential to know. To send them to the printer, acces the `Terminal` tab.
+If needed to calibrate or test any sort of movement, some G-code commands are essential to know. To send them to the printer, access the `Terminal` tab.
 
 The general structure of G-code is essentialy composed of three parts. The following is an example G-code command.
 
@@ -49,7 +51,7 @@ Simplifying the three main parts mentioned before, they can be seen as **_what_*
 
 - As you can probably tell, the **_what_** is represented by the `G` followed by a number. The numbers chosen represent different actions a printer can perform.
 
-- The **_who_** can be in a diverse range of options. In this example, it was the motors `A`, `B`, `C` and `D`. Notice how each of them were followed by a number. In this case, that number represented the amount of movement in millimiters.
+- The **_who_** can be in a diverse range of options. In this example, it was the motors `A`, `B`, `C` and `D`. Notice how each of them were followed by a number. In this case, that number represented the amount of movement in millimeters.
 
 - Finally, the **_how_**. Depending on the `G`command chosen, it can mean a variety of different things. In the example shown, it meant the feedrate of the movement being executed, represented by the letter `F`.
 
@@ -80,7 +82,7 @@ To assist you in your first "conversations" with the Hangprinter, here are some 
 With any 3D printer, the first step to printing is either designing or downloading a 3D object that you would like to see in the real world.
 
 If you don't really want to design your own prints, [Thingiverse](https://www.thingiverse.com/) is an excellent place to find the awesome things made by the 3D printing community.
-But if you want to go and design your own creatiosn, we recommend two pieces of Software. For beginners, [tinkercad](https://www.tinkercad.com/), a simple to use intuitive online editor. For individuals with previous experience in CAD, Fusion 360 is an amazing option.
+But if you want to go and design your own creation, we recommend two pieces of Software. For beginners, [tinkercad](https://www.tinkercad.com/), a simple to use intuitive online editor. For individuals with previous experience in CAD, Fusion 360 is an amazing option.
 
 For a first print, a cube or a 3D Benchy are usually sufficient, as you will be able to see the issues with the printer easily.
 
@@ -135,7 +137,4 @@ Before starting your print, there are some necessary "pre-flight" checks:
     1. Try setting the Smart Steppers into torque mode using `G95 A35 B35 C35 D35`(Hold mover while doing this and reset to lock mode after, using `G95 A0 B0 C0 D0`).
     >
     - **No**
-    1. Make sure that the anchors are parallel to the corresponding beam on the mover. Re-callibrate as needed.
-    
-  
-    
+    1. Make sure that the anchors are parallel to the corresponding beam on the mover. Re-calibrate as needed.
