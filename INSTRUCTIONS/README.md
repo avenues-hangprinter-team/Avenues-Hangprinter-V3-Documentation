@@ -89,10 +89,10 @@ Slicing serves to transform a 3D object into a series of G-code commands for a s
 
 In the slicer settings, you should set a profile for the Hangprinter. The settings we used are:
 
-- Layer Height:
-- Nozzle thickness:
-- Temperature:
-- Speed:
+- Layer Height: 3mm
+- Nozzle size: 1mm
+- Temperature: 200
+- Speed: 150mm/s
 
 <a name="Printing"></a>
 ## Printing
